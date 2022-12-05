@@ -6,7 +6,7 @@
 
 <script>
 
-    function saltarlinea(){
+        function saltarlinea(){
         document.write("<br><br>");
 
 
@@ -14,6 +14,7 @@
     function imprimir(frase){
 
         document.write(frase)
+        saltarlinea();
     }
 
     var anho = 2020;
@@ -22,33 +23,19 @@
 
     // este codigo calcula las edades de Juan, Pedro y Carlos
 
-    saltarlinea();
-
-  imprimir("Juan tiene: " + (anho-2000) + " años");
+    imprimir("Juan tiene: " + (anho-2000) + " años");
     
-    saltarlinea();
+    imprimir("Pedro tiene: " + (anho-1995) + " años");
     
-  imprimir("Pedro tiene: " + (anho-1995) + " años");
-    
-    saltarlinea();
-    
-  imprimir("Carlos tiene: " + (anho-2005) + " años");
-    
-    saltarlinea();
+    imprimir("Carlos tiene: " + (anho-2005) + " años");
     
     anho= 2020
     
-    document.write("Jimena tiene: " + (anho-2010) + " años");
+    imprimir("Jimena tiene: " + (anho-2010) + " años");
     
-    saltarlinea();
+    imprimir("Paola tiene: " + (anho-1995) + " años");
     
-    document.write("Paola tiene: " + (anho-1995) + " años");
-    
-    saltarlinea();
-    
-    document.write("Laura tiene: " + (anho-2005) + " años");
-    
-    saltarlinea();
+    imprimir("Laura tiene: " + (anho-2005) + " años");
     
     var edadJimena = 10;
     var edadPaola = 25;
@@ -61,7 +48,5 @@
     promedio = (edadJimena + edadPaola + edadLaura)/3 
     
     document.write("El promedio de las edades de ",  nombre1 + ", " + nombre2 + " y " + nombre3 + " es: ", Math.round(promedio));
-    
-    document.write(saltodelineasimp);
 
 </script>
